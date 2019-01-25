@@ -1,0 +1,19 @@
+[ignore]
+.*/worker-loader/.*
+
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+module.name_mapper='^enhancers\/\(.*\)$' -> '<PROJECT_ROOT>/src/enhancers/\1'
+module.name_mapper='^features\/\(.*\)$' -> '<PROJECT_ROOT>/src/features/\1'
+module.name_mapper='^ui\/\(.*\)$' -> '<PROJECT_ROOT>/src/ui/\1'
+module.name_mapper='^types\/\(.*\)$' -> '<PROJECT_ROOT>/src/types/\1'
+module.name_mapper='^utils\/\(.*\)$' -> '<PROJECT_ROOT>/src/utils/\1'
+module.system.node.resolve_dirname=node_modules
+module.system.node.resolve_dirname=./src
+
+[strict]
